@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import Header from "../app/components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Head from 'next/head';
+import GtmScript from './GtmScript';
 
 const poppins = localFont({
   src: [
@@ -34,16 +35,17 @@ const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  return (
-    <html lang="en">
-      <Head>
-        <title>{metadata.title}</title>
-      </Head>
-      <body className={poppins.className}>
-        <Header />
-        {children}
-        <Footer />
-      </body>
-    </html>
+    <GtmScript />
+      return (
+        <html lang="en">
+          <Head>
+            <title>{metadata.title}</title>
+          </Head>
+          <body className={poppins.className}>
+            <Header />
+            {children}
+            <Footer />
+          </body>
+        </html>
   );
 }
