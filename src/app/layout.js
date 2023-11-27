@@ -5,7 +5,6 @@ import Header from "../app/components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Head from 'next/head';
 
-
 const poppins = localFont({
   src: [
     {
@@ -37,7 +36,6 @@ const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-   
       <Head>
         
         <title>{metadata.title}</title>
