@@ -4,7 +4,6 @@ import localFont from "next/font/local";
 import Header from "../app/components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Head from 'next/head';
-import GtmScript from './GtmScript';
 
 const poppins = localFont({
   src: [
@@ -35,17 +34,28 @@ const metadata = {
 };
 
 export default function RootLayout({ children }) {
-    <GtmScript />
-      return (
-        <html lang="en">
-          <Head>
-            <title>{metadata.title}</title>
-          </Head>
-          <body className={poppins.className}>
-            <Header />
-            {children}
-            <Footer />
-          </body>
-        </html>
+  return (
+    <html lang="en">
+      <Head>
+         {/* Google tag (gtag.js) */}
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-RTE6NS3RT3"></script>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-RTE6NS3RT3');
+          `,
+        }}
+      />
+        <title>{metadata.title}</title>
+      </Head>
+      <body className={poppins.className}>
+        <Header />
+        {children}
+        <Footer />
+      </body>
+    </html>
   );
 }
