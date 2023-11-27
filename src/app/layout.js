@@ -4,7 +4,7 @@ import localFont from "next/font/local";
 import Header from "../app/components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Head from 'next/head';
-import GoogleAnalytics from './components/GoogleAnalytics.tsx';
+
 
 const poppins = localFont({
   src: [
@@ -37,7 +37,7 @@ const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <GoogleAnalytics GA_MEASUREMENT_ID='G-RTE6NS3RT3'/>
+   
       <Head>
         
         <title>{metadata.title}</title>
