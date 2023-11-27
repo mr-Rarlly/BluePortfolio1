@@ -5,9 +5,7 @@ import { Hind } from "next/font/google";
 import MySlider from "./components/SliderCard/MySlider";
 import AboutMe from "./components/AboutMe/AboutMe";
 import Testimonial from "./components/Testimonial/Testimonial";
-
-
-
+import GoogleAnalytics from './components/GoogleAnalytics';
 
 
 const hind = Hind({
@@ -16,6 +14,7 @@ const hind = Hind({
 });
 
 export default function Home() {
+  
   const [isScrolled, setIsScrolled] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
@@ -31,6 +30,7 @@ export default function Home() {
   }, []);
   return (
     <main className="min-h-screen relative">
+      <GoogleAnalytics />
       <HomeComponent />   
       <div
         className="mt-0 pt-5 -mb-40"

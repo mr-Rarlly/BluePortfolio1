@@ -36,10 +36,10 @@ const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
-        
+      <Head>        
         <title>{metadata.title}</title>
       </Head>
+      
       <body className={poppins.className}>
         <Header />
         {children}
