@@ -99,6 +99,18 @@ const HomeComponent = () => {
   return (
     <React.Fragment>
       <Header/>
+      {/* Google tag (gtag.js) */}
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-RTE6NS3RT3"></script>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-RTE6NS3RT3');
+          `,
+        }}
+      />
       <div
         id="home"
         style={{
