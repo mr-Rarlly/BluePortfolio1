@@ -37,6 +37,18 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
+        {/* Google tag (gtag.js) */}
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-RTE6NS3RT3"></script>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-RTE6NS3RT3');
+          `,
+        }}
+      />
 
         <title>{metadata.title}</title>
       </Head>
