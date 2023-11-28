@@ -24,7 +24,7 @@ const poppins = localFont({
 });
 
 const metadata = {
-  title: "SalehAmin|3D Artist",
+  title: "Saleh Amin",
   description: "3D Artist",
   icons: {
     icon:['/favicon.ico?=v4'],
@@ -42,7 +42,7 @@ export default function RootLayout({ children }) {
       </Head>
       <body className={poppins.className}>
         <Header />
-        <title>{metadata.title}</title>
+        {/* <title>{metadata.title}</title> */}
         {children}
         <Footer />
       </body>
