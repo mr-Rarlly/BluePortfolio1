@@ -8,10 +8,14 @@ import Testimonial from "./components/Testimonial/Testimonial";
 import GoogleAnalytics from './components/GoogleAnalytics';
 
 
+
 const hind = Hind({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
 });
+
+
+
 
 export default function Home() {
   

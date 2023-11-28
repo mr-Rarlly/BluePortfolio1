@@ -6,6 +6,7 @@ import Image from 'next/image';
 
 import "./aboutme.css";
 
+
 const hind = Hind({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],

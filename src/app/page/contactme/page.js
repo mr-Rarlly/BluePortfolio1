@@ -8,6 +8,7 @@ import { Hind } from "next/font/google";
 import { ToastClassName, ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+
 const hind = Hind({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
@@ -22,6 +23,7 @@ export default function Page() {
     message: "",
   });
 
+  
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
