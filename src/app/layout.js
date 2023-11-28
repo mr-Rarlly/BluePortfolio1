@@ -24,7 +24,7 @@ const poppins = localFont({
 });
 
 const metadata = {
-  title: "Saleh Amin",
+  title: "SalehAmin|3D Artist",
   description: "3D Artist",
   icons: {
     icon:['/favicon.ico?=v4'],
