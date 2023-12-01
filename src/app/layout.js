@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import Header from "../app/components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Head from 'next/head';
+import GoogleAnalytics from './components/GoogleAnalytics';
 
 const poppins = localFont({
   src: [
@@ -41,9 +42,11 @@ export default function RootLayout({ children }) {
         <title>{metadata.title}</title>
       </Head>
       <body className={poppins.className}>
+      <GoogleAnalytics />
         <Header />
         {/* <title>{metadata.title}</title> */}
         {children}
+        <GoogleAnalytics />
         <Footer />
       </body>
     </html>

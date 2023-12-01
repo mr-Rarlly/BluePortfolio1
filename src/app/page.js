@@ -71,9 +71,11 @@ export default function Home() {
         <div 
         style={{ transform: "translate(0px,-170px)" }}
         >
+          <GoogleAnalytics />
           <MySlider/>
         </div>
         </div>
+        <GoogleAnalytics />
         <AboutMe/>
       {/* <Testimonial/> */}
 
