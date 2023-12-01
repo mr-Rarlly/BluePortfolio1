@@ -42,9 +42,11 @@ export default function RootLayout({ children }) {
         <title>{metadata.title}</title>
       </Head>
       <body className={poppins.className}>
+        
       <GoogleAnalytics />
         <Header />
         {/* <title>{metadata.title}</title> */}
+        
         {children}
         <GoogleAnalytics />
         <Footer />

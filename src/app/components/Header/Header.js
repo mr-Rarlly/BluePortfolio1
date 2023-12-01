@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import Drawer from './DiagonalDrawer'
 import '../Header/DiagonalDrawer.css'
 import Link from "next/link";
+import Head from 'next/head';
 
 
 export default function Header() {
@@ -30,6 +31,13 @@ export default function Header() {
 
   return (
     <React.Fragment>
+      
+      <Head>
+        <title>Your Website Title</title>
+        <meta name="description" content="Your website description" />
+        {/* Add other SEO-related meta tags here */}
+      </Head>
+
       <div className={`diagonal-drawer ${isOpen  ? "open" : ""}`}>
         <Drawer
             isOpen={isOpen}

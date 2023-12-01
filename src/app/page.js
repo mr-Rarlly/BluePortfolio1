@@ -6,6 +6,7 @@ import MySlider from "./components/SliderCard/MySlider";
 import AboutMe from "./components/AboutMe/AboutMe";
 import Testimonial from "./components/Testimonial/Testimonial";
 import GoogleAnalytics from './components/GoogleAnalytics';
+import Header from './components/Header/Header';
 
 
 
@@ -33,6 +34,7 @@ export default function Home() {
     };
   }, []);
   return (
+    
     <main className="min-h-screen relative">
       <GoogleAnalytics />
       <HomeComponent />   
