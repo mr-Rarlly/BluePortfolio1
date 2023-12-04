@@ -25,8 +25,8 @@ const poppins = localFont({
 });
 
 const metadata = {
-  title: "Saleh Amin",
-  description: "3D Artist",
+  title: "Saleh Amin - 3D Artist",
+  description: "Portfolio of Saleh Amin, a talented 3D Artist and Motion Graphic Designer.",
   icons: {
     icon:['/favicon.ico?=v4'],
     apple:['/apple-touch-icon.png?=v4'],
@@ -38,15 +38,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
-        
         <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+
+        {/* Add other SEO-related meta tags here */}
       </Head>
       <body className={poppins.className}>
-        
-      <GoogleAnalytics />
+        <GoogleAnalytics />
         <Header />
-        {/* <title>{metadata.title}</title> */}
-        
         {children}
         <GoogleAnalytics />
         <Footer />

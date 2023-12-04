@@ -1,4 +1,4 @@
-"use client";
+
 import React, { useEffect, useState } from "react";
 import Drawer from './DiagonalDrawer'
 import '../Header/DiagonalDrawer.css'
@@ -33,8 +33,9 @@ export default function Header() {
     <React.Fragment>
       
       <Head>
-        <title>Your Website Title</title>
-        <meta name="description" content="Your website description" />
+      <title>Saleh Amin - 3D Artist</title>
+        <meta name="description" content="Portfolio of Saleh Amin, a talented 3D Artist and Motion Graphic Designer." />
+        {/* Add other SEO-related meta tags here */}
         
         {/* Google Tag Manager Script */}
         <script

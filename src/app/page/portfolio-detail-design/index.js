@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { Hind } from "next/font/google";
+import Head from 'next/head';
 
 const hind = Hind({
   subsets: ["latin"],
@@ -56,6 +57,13 @@ export default function Index({ id, data, DataArray }) {
 
   return (
     <React.Fragment>
+      <Head>
+        <title>{`Your Site Name | ${data.title}`}</title>
+        <meta name="description" content={data.des} />
+        <meta property="og:title" content={data.title} />
+        <meta property="og:description" content={data.des} />
+        <meta property="og:image" content={data.images[0]} />
+      </Head>
       <div className="overlay h-[400px] lg:top-[96px] sm:top-0 z-20 border-t border-gray-300"></div>
       <div className="relative">
         <img

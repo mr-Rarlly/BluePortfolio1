@@ -85,6 +85,11 @@ export default function Page() {
 
   return (
     <React.Fragment>
+       <Head>
+        <title>Your Site Name | Contact</title>
+        <meta name="description" content="Contact us for any inquiries." />
+        {/* Add more meta tags as needed */}
+      </Head>
       <ToastContainer />
       <div className="flex flex-col items-center justify-center w-full pt-[80px] pb-[80px] mt-4">
         <div className='flex flex-col items-center justify-center bg-[url("/offices.jpg")] bg-cover bg-center w-full h-[400px]'>
