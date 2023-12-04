@@ -35,6 +35,7 @@ export default function Header() {
       <Head>
         <title>Your Website Title</title>
         <meta name="description" content="Your website description" />
+        
         {/* Google Tag Manager Script */}
         <script
           dangerouslySetInnerHTML={{

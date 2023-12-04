@@ -10,6 +10,7 @@ import Header from './components/Header/Header';
 
 
 
+
 const hind = Hind({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
@@ -36,6 +37,7 @@ export default function Home() {
   return (
     
     <main className="min-h-screen relative">
+      
       <GoogleAnalytics />
       <HomeComponent />   
       <div
