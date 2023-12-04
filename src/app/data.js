@@ -101,7 +101,7 @@ export const DataArray = [
       "https://i.imgur.com/XsnSfCd.png",
     ],
     videoLink: (
-      <div class="aspect-w-16 aspect-h-9">
+      <div className="aspect-w-16 aspect-h-9">
         <iframe
           src="https://www.youtube.com/embed/BmpKKpxPRKQ?si=IR1XKz7bOHFY6JgM"
           title="YouTube video player"
@@ -144,7 +144,7 @@ export const DataArray = [
 
     ],
     videoLink: (
-      <div class="aspect-w-16 aspect-h-9">
+      <div className="aspect-w-16 aspect-h-9">
         <iframe
           src="https://www.youtube.com/embed/shRdPeBGj4A?si=14HrKnCGnZgSXBpP"
           title="YouTube video player"
@@ -185,7 +185,7 @@ export const DataArray = [
 
     ],
     videoLink: (
-      <div class="aspect-w-16 aspect-h-9">
+      <div className="aspect-w-16 aspect-h-9">
         <iframe
           src="https://www.youtube.com/embed/eacw_z1Ga4o?si=oDszvfo-1DGBCSOT"
           title="YouTube video player"
@@ -225,7 +225,7 @@ export const DataArray = [
 
     ],
     videoLink: (
-      <div class="aspect-w-16 aspect-h-9">
+      <div className="aspect-w-16 aspect-h-9">
         <iframe
           src="https://www.youtube.com/embed/Y4RJDgoQqv0?si=qxmE45ZDjhDczx1n"
           title="YouTube video player"
@@ -266,7 +266,7 @@ export const DataArray = [
 
     ],
     videoLink: (
-      <div class="aspect-w-16 aspect-h-9">
+      <div className="aspect-w-16 aspect-h-9">
         <iframe
           src="https://www.youtube.com/embed/3ZC__Lh4yog?si=E4Er1gNY0wB6mm37"
           title="YouTube video player"
@@ -304,7 +304,7 @@ export const DataArray = [
       "https://i.imgur.com/grzPV6z.jpg",
     ],
     videoLink: (
-      <div class="aspect-w-16 aspect-h-9">
+      <div className="aspect-w-16 aspect-h-9">
         <iframe
           src="https://www.youtube.com/embed/5Q5RK8VAiAY?si=xitAnWrPLapwDvIE"
           title="YouTube video player"
@@ -342,7 +342,7 @@ export const DataArray = [
   //     "https://i.imgur.com/grzPV6z.jpg",
   //   ],
   //   videoLink: (
-  //     <div class="aspect-w-16 aspect-h-9">
+  //     <div className="aspect-w-16 aspect-h-9">
   //       <iframe
   //         src="https://www.youtube.com/embed/5Q5RK8VAiAY?si=xitAnWrPLapwDvIE"
   //         title="YouTube video player"

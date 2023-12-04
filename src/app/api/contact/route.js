@@ -68,7 +68,7 @@ export async function POST(request) {
       </style>
 </head>
 <body>
-    <div class="email-container">
+    <div className="email-container">
 
         <p>Saleh Amin</p>
         <ul>
