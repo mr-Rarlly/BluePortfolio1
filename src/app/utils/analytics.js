@@ -1,11 +1,16 @@
 // utils/analytics.js
-import ReactGA from 'react-ga';
-
 export const initGA = () => {
-  ReactGA.initialize('G-RTE6NS3RT3');
+  // Initialize gtag.js
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    window.dataLayer.push(arguments);
+  }
+  window.gtag = gtag;
+  gtag('js', new Date());
+  gtag('config', 'G-RTE6NS3RT3');
 };
 
 export const logPageView = () => {
-  ReactGA.set({ page: window.location.pathname });
-  ReactGA.pageview(window.location.pathname);
+  // Log page view with gtag.js
+  window.gtag('config', 'G-RTE6NS3RT3', { page_path: window.location.pathname });
 };
