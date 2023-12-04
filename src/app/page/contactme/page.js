@@ -7,6 +7,7 @@ import { FaHeadphones } from "react-icons/fa";
 import { Hind } from "next/font/google";
 import { ToastClassName, ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Head from 'next/head';
 
 
 const hind = Hind({
